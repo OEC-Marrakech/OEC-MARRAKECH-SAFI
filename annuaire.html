@@ -489,57 +489,51 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4.25rem 0 1.5re
 .pg-btn.active{background:var(--bx);color:#fff;border-color:var(--bx)}
 .pg-btn:disabled{opacity:.3;cursor:default}
 .pg-prev,.pg-next{width:auto;padding:0 .9rem;font-size:.74rem}
-/* ── Fiche membre : design premium fidèle à la référence ── */
-.modal-overlay{position:fixed;inset:0;background:rgba(19,8,10,.74);z-index:2000;display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease;backdrop-filter:blur(10px)}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;display:flex;align-items:center;justify-content:center;padding:1.5rem;opacity:0;visibility:hidden;transition:all .25s;backdrop-filter:blur(6px)}
 .modal-overlay.open{opacity:1;visibility:visible}
-.modal-box{background:#fff;border-radius:22px;max-width:1048px;width:100%;max-height:90vh;overflow-y:auto;overflow-x:hidden;box-shadow:0 42px 110px rgba(0,0,0,.46);border:1px solid rgba(255,255,255,.22);transform:translateY(24px) scale(.985);transition:transform .32s cubic-bezier(.2,.9,.25,1)}
-.modal-overlay.open .modal-box{transform:translateY(0) scale(1)}
-.modal-header{position:relative;display:flex;align-items:stretch;min-height:416px;background:linear-gradient(135deg,#7d1725 0%,#6b1521 48%,#430c15 100%);overflow:hidden}
-.modal-header::before{content:'';position:absolute;inset:-8%;z-index:0;pointer-events:none;background:linear-gradient(125deg,rgba(255,255,255,.035) 0%,rgba(255,255,255,.035) 30%,transparent 30.2%,transparent 42%,rgba(255,255,255,.025) 42.2%,rgba(255,255,255,.025) 43%,transparent 43.2%)}
-.modal-header::after{content:'';position:absolute;left:0;top:0;width:57%;height:100%;z-index:1;pointer-events:none;background:linear-gradient(115deg,rgba(45,3,9,.12),rgba(45,3,9,0) 65%),radial-gradient(ellipse 75% 90% at 12% 0%,rgba(255,255,255,.07),transparent 62%)}
-.modal-header-info{position:relative;z-index:3;flex:0 0 55%;max-width:55%;display:flex;flex-direction:column;justify-content:center;gap:.62rem;padding:3rem 1.5rem 3rem 3rem}
-.modal-id-tag{display:inline-block;font-size:.68rem;font-weight:700;color:rgba(255,255,255,.74);letter-spacing:.14em;text-transform:uppercase;padding-bottom:.55rem;border-bottom:2px solid #D4AF37;width:fit-content}
-.modal-name{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,3.3vw,2.65rem);font-weight:800;color:#fff;line-height:1.08;letter-spacing:.005em;text-transform:uppercase;margin-top:.35rem;text-shadow:0 2px 18px rgba(0,0,0,.22)}
-.modal-cabinet-txt{font-size:1.03rem;color:rgba(255,255,255,.9);font-weight:500;margin-top:.05rem}
-.modal-badge{display:inline-flex;align-items:center;gap:.5rem;width:fit-content;margin-top:.55rem;background:linear-gradient(135deg,#E7C65C,#B9892D);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.075em;text-transform:uppercase;padding:.63rem 1.22rem;border-radius:100px;box-shadow:0 8px 20px rgba(0,0,0,.28)}
-.modal-badge svg{width:15px;height:15px;flex-shrink:0}
-.modal-header-photo-wrap{position:absolute;top:0;right:0;bottom:0;width:47%;overflow:hidden;background:#fff;clip-path:polygon(9% 0,100% 0,100% 100%,0 100%);z-index:2;display:flex;align-items:stretch;justify-content:stretch;padding:0}
-.modal-photo{position:relative;inset:auto;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:center center;display:block;transform:none;filter:none;margin:0}
-.modal-header-photo-wrap::before,.modal-header-photo-wrap::after{display:none;content:none}
-.modal-photo-fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:4.5rem;font-weight:800;color:rgba(255,255,255,.85)}
-.modal-close{position:absolute;top:1.15rem;right:1.15rem;z-index:5;width:42px;height:42px;border-radius:50%;background:rgba(123,39,50,.72);border:1px solid rgba(255,255,255,.24);color:#fff;cursor:pointer;font-size:1.35rem;line-height:1;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(5px)}
-.modal-close:hover{background:#8f2736;border-color:#fff;transform:rotate(90deg)}
-.modal-body{padding:2.45rem 3.25rem 2.25rem;background:#fff}
-.modal-sec-title{position:relative;font-size:.82rem;font-weight:800;letter-spacing:.17em;text-transform:uppercase;color:var(--bx);margin-bottom:1.15rem;padding-bottom:1rem}
-.modal-sec-title::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1.5px;background:linear-gradient(90deg,#D4AF37 0%,#D4AF37 100%)}
-.modal-sec-title::before{content:'';position:absolute;left:-1px;bottom:-1.5px;width:5px;height:5px;border-radius:50%;background:#D4AF37;box-shadow:calc(100% + 1035px) 0 0 #D4AF37}
-.modal-row{display:flex;align-items:center;gap:1.35rem;padding:1.02rem 0;border-bottom:1px solid #e9e6e4}
-.modal-row:last-child{border-bottom:none}
-.modal-row-ico{width:50px;height:50px;min-width:50px;border-radius:12px;background:#f7eeee;color:var(--bx);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.modal-row-ico svg{width:21px;height:21px}
-.modal-row-content{display:flex;align-items:center;gap:1.25rem;flex:1;min-width:0}
-.modal-row-label{font-size:.73rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#171518;flex:0 0 105px;min-width:105px}
-.modal-row-divider{width:1px;height:30px;align-self:center;background:#D4AF37;opacity:.72;flex-shrink:0}
-.modal-row-val{font-size:.95rem;color:#333238;font-weight:500;word-break:break-word;line-height:1.45;flex:1;min-width:0}
-.modal-row-val a{color:var(--bx);text-decoration:none}
-.modal-row-val a:hover{text-decoration:underline}
-.modal-actions{display:none}
-@media(max-width:1050px){.ann-grid:not(.view-list){grid-template-columns:repeat(2,1fr)}}
+.modal-box{background:#fff;border-radius:16px;max-width:660px;width:100%;max-height:92vh;overflow-y:auto;box-shadow:0 30px 90px rgba(0,0,0,.25);transform:scale(.9);opacity:0;transition:transform .32s cubic-bezier(.34,1.56,.64,1),opacity .25s}
+.modal-overlay.open .modal-box{transform:scale(1);opacity:1}
+.modal-header{position:relative;background:linear-gradient(135deg,var(--bx) 0%,var(--bx-dk) 55%,#4d1119 100%);overflow:hidden}
+.modal-header::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(45deg,rgba(212,178,122,.09) 0,rgba(212,178,122,.09) 1px,transparent 1px,transparent 42px),repeating-linear-gradient(-45deg,rgba(212,178,122,.09) 0,rgba(212,178,122,.09) 1px,transparent 1px,transparent 42px)}
+.modal-header-inner{display:flex;min-height:280px}
+.modal-header-text{flex:0 0 55%;max-width:55%;padding:1.85rem 1.85rem 1.6rem;display:flex;flex-direction:column;justify-content:flex-end;position:relative;z-index:2;box-sizing:border-box}
+.modal-header-photo{flex:0 0 45%;max-width:45%;position:relative;overflow:hidden}
+.modal-header-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--bx) 0%,rgba(157,46,58,0) 32%);z-index:1;pointer-events:none}
+.modal-photo{width:100%;height:100%;min-height:280px;object-fit:cover;object-position:center 15%;display:block}
+.modal-photo-fallback{width:100%;height:100%;min-height:280px;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif;font-size:4rem;font-weight:800;color:rgba(255,255,255,.85)}
+.modal-close{position:absolute;top:.85rem;right:.85rem;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);border:none;color:#fff;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background .2s;z-index:3}
+.modal-close:hover{background:rgba(255,255,255,.3)}
+.modal-id-tag{font-size:.62rem;color:#d9b568;letter-spacing:.14em;margin-bottom:.4rem;font-weight:700;text-transform:uppercase}
+.modal-name{font-family:'Montserrat',sans-serif;font-size:1.5rem;font-weight:800;color:#fff;margin-bottom:.22rem;line-height:1.2;word-break:break-word}
+.modal-cabinet-txt{font-size:.87rem;color:rgba(255,255,255,.85)}
+.modal-badge-role{display:inline-flex;align-items:center;gap:.35rem;background:#c4961a;color:#fff;font-size:.62rem;font-weight:800;padding:.34rem .85rem;border-radius:100px;letter-spacing:.07em;text-transform:uppercase;width:fit-content;margin-top:.55rem}
+.modal-body{padding:1.75rem}
+.modal-cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.modal-info-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:1.25rem 1.35rem;display:flex;align-items:flex-start;gap:.9rem;box-shadow:0 2px 10px rgba(0,0,0,.04);opacity:0;transform:translateY(16px) scale(.97);transition:opacity .4s ease,transform .4s ease,box-shadow .25s,border-color .25s}
+.modal-info-card.show{opacity:1;transform:translateY(0) scale(1)}
+.modal-info-card:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 16px 34px rgba(157,46,58,.16);border-color:rgba(157,46,58,.3)}
+.modal-info-ico{width:44px;height:44px;min-width:44px;border-radius:12px;background:linear-gradient(145deg,var(--bx),var(--bx-dk));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.15rem;box-shadow:0 4px 10px rgba(157,46,58,.25)}
+.modal-info-label{font-size:.62rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:.32rem}
+.modal-info-val{font-size:.86rem;color:var(--dark);font-weight:600;line-height:1.45;word-break:break-word}
+.modal-info-val a{color:var(--bx);text-decoration:none}
+.modal-info-val a:hover{text-decoration:underline}
+@media(max-width:560px){.modal-cards-grid{grid-template-columns:1fr}}
+.modal-actions{display:flex;gap:.75rem;flex-wrap:wrap;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--border)}
+.mbtn-p{flex:1;min-width:130px;display:flex;align-items:center;justify-content:center;gap:.4rem;padding:.75rem;border-radius:7px;background:var(--bx);color:#fff;font-size:.8rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;text-decoration:none;transition:all .2s;border:none;cursor:pointer;font-family:'Poppins',sans-serif}
+.mbtn-p:hover{background:var(--bx-dk)}
+.mbtn-s{display:flex;align-items:center;justify-content:center;gap:.38rem;padding:.75rem 1.1rem;border-radius:7px;border:1.5px solid var(--border);color:var(--text);font-size:.8rem;font-weight:600;text-decoration:none;transition:all .2s;cursor:pointer;background:#fff}
+.mbtn-s:hover{border-color:var(--bx);color:var(--bx)}
 @media(max-width:1050px){.ann-grid:not(.view-list){grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){
   .ann-grid:not(.view-list){grid-template-columns:1fr}
   .ann-grid.view-list .ann-card{flex-direction:column}
   .ann-grid.view-list .ann-card-img{width:100%;height:220px}
   .ann-grid.view-list .ann-card-footer{border-left:none;border-top:1px solid var(--grey);width:100%;flex-direction:row}
-  .modal-box{border-radius:18px;max-height:94vh}
-  .modal-header{min-height:0;height:auto}
-  .modal-header-photo-wrap{position:absolute;width:48%;height:100%;clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);padding:0}
-  .modal-photo{width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:center center;transform:none;margin:0}
-  .modal-header-info{flex-basis:58%;max-width:58%;padding:2.5rem 1rem 2.5rem 2rem}
-  .modal-name{font-size:clamp(1.55rem,5vw,2.2rem)}
-  .modal-body{padding:2rem 2rem 2.2rem}
-  .modal-row{gap:1rem;padding:.95rem 0}
-  .modal-row-label{flex-basis:95px;min-width:95px}
+  .modal-header-inner{flex-direction:column-reverse;min-height:0}
+  .modal-header-text{flex:1 1 auto;max-width:100%;padding:1.4rem 1.4rem 1.25rem}
+  .modal-header-photo{flex:1 1 auto;max-width:100%;height:200px}
+  .modal-header-photo::after{background:linear-gradient(to top,var(--bx) 0%,rgba(157,46,58,0) 35%)}
+  .modal-photo,.modal-photo-fallback{min-height:200px;height:200px}
 }
 </style>
 </head>
@@ -547,9 +541,9 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4.25rem 0 1.5re
 <!-- ══ TOPBAR ══ -->
 <div class="topbar">
   <div class="ti">
-    <div class="tb-l">📍 Marrakech-Safi · Maroc &nbsp;|&nbsp; ✉️ croecms@gmail.com</div>
+    <div class="tb-l">📍 Marrakech-Safi · Maroc &nbsp;|&nbsp; ✉️ <a href="mailto:croecms@gmail.com" style="color:inherit;text-decoration:none">croecms@gmail.com</a></div>
     <div class="tb-r">
-      <a href="#">oec.ma</a>
+      <a href="https://oec.ma" target="_blank" rel="noopener noreferrer">oec.ma</a>
       <a href="#">+212 626 770 645</a>
       <div class="tb-lang"><a href="#" class="active">FR</a></div>
     </div>
@@ -571,8 +565,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4.25rem 0 1.5re
           <a href="qui-sommes-nous.html">Qui sommes-nous ?</a>
           <a href="president.html">Mot du Président</a>
           <a href="conseil.html">Missions</a>
-          <a href="conseil.html#membres">Membres du Conseil</a>
           <a href="conseil.html#bureau">Bureau du Conseil</a>
+          <a href="conseil.html#membres">Membres du Conseil</a>
           <a href="conseil.html#valeurs">Valeurs</a>
         </div>
       </div>
@@ -597,14 +591,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4.25rem 0 1.5re
         </div>
       </div>
       <div class="ni-item"><a href="annuaire.html" class="na active">Annuaires</a></div>
-      <div class="ni-item">
-        <a href="actualites.html" class="na">Actualités <span class="ch">▾</span></a>
-        <div class="dd">
-          <a href="actualites.html">Actualités</a>
-          <a href="evenements.html">Événements</a>
-          <a href="evenements.html">Séminaires &amp; Formations</a>
-        </div>
-      </div>
+      
       <a href="contact.html" class="ncta">Contactez-nous</a>
     </nav>
     <button class="hbg" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -622,8 +609,8 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4.25rem 0 1.5re
     <div class="mnv-item"><a href="#" class="mnv-link active">Accueil</a></div>
     <div class="mnv-item" onclick="this.classList.toggle('open')">
       <div class="mnv-link">Le Conseil Régional <span class="mc">▾</span></div>
-      <div class="mob-sub"><a href="qui-sommes-nous.html">Qui sommes-nous ?</a><a href="president.html">Mot du Président</a><a href="conseil.html">Missions</a><a href="conseil.html#membres">Membres du Conseil</a>
-          <a href="conseil.html#bureau">Bureau du Conseil</a><a href="conseil.html#valeurs">Valeurs</a></div>
+      <div class="mob-sub"><a href="qui-sommes-nous.html">Qui sommes-nous ?</a><a href="president.html">Mot du Président</a><a href="conseil.html">Missions</a><a href="conseil.html#bureau">Bureau du Conseil</a>
+          <a href="conseil.html#membres">Membres du Conseil</a><a href="conseil.html#valeurs">Valeurs</a></div>
     </div>
     <div class="mnv-item" onclick="this.classList.toggle('open')">
       <div class="mnv-link">La Profession <span class="mc">▾</span></div>
@@ -634,10 +621,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4.25rem 0 1.5re
       <div class="mob-sub"><a href="#">Pourquoi un expert-comptable ?</a><a href="entreprises.html#audit-legal">Audit légal</a><a href="entreprises.html#conseil-fiscal">Conseil fiscal</a><a href="entreprises.html#accompagnement-pme">Accompagnement PME</a></div>
     </div>
     <div class="mnv-item"><a href="annuaire.html" class="mnv-link">Annuaires</a></div>
-    <div class="mnv-item" onclick="this.classList.toggle('open')">
-      <div class="mnv-link">Actualités &amp; Événements <span class="mc">▾</span></div>
-      <div class="mob-sub"><a href="actualites.html">Actualités</a><a href="evenements.html">Événements</a></div>
-    </div>
   </nav>
   <div class="mob-ft"><a href="contact.html">Contactez-nous</a></div>
 </div>
@@ -1264,7 +1247,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.6);padding:4.25rem 0 1.5re
       </div>
       <div class="fcol"><h5>Le Conseil</h5><ul><li><a href="president.html">Mot du Président</a></li><li><a href="conseil.html#membres">Membres du Conseil</a></li><li><a href="conseil.html">Missions</a></li><li><a href="conseil.html#valeurs">Valeurs</a></li></ul></div>
       <div class="fcol"><h5>La Profession</h5><ul><li><a href="profession.html#devenir">Devenir expert-comptable</a></li><li><a href="profession.html#inscription">Procédure d'inscription</a></li><li></li><li><a href="profession.html#formation">Formation continue</a></li><li><a href="profession.html#documents">Documents</a></li><li><a href="annuaire.html">Annuaires</a></li></ul></div>
-      <div class="fcol"><h5>Contact</h5><ul><li><a href="#">📍 Bd Mohammed VI, Marrakech</a></li><li><a href="tel:+212626770645">📞 +212 626 770 645</a></li><li><a href="mailto:croecms@gmail.com">✉️ croecms@gmail.com</a></li><li style="margin-top:.4rem"><a href="contact.html">Formulaire de contact</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="evenements.html">Événements</a></li></ul></div>
+      <div class="fcol"><h5>Contact</h5><ul><li><a href="https://maps.app.goo.gl/ApQJXtmoVK4ntHAv5" target="_blank" rel="noopener noreferrer">📍 Av. du Président Kennedy, Marrakech 40000</a></li><li><a href="tel:+212626770645">📞 +212 626 770 645</a></li><li><a href="mailto:croecms@gmail.com">✉️ croecms@gmail.com</a></li><li style="margin-top:.4rem"><a href="contact.html">Formulaire de contact</a></li></ul></div>
     </div>
     <div class="ftr-bt">
       <span>© Copyright 2025 OEC Marrakech-Safi — Tous droits réservés</span>
@@ -1298,41 +1281,10 @@ const cio=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersec
 document.querySelectorAll('.chfg,.hero-stats').forEach(el=>cio.observe(el));
 </script>
 <script>
-var EXPERTS=[{"idx": 0, "nom": "Nouamane El Jazouli", "id": "2026073912", "cabinet": "El Jazouli Expertise-Comptable", "adresse": "4 Rue El Imam Abou Hanifa, Résidence Warda C, Guéliz", "email": "eljazouli.nouamane@gmail.com", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#2a5c8a,#0d2a4a)"}, {"idx": 1, "nom": "Mohamed Ayoub Jouigi", "id": "2025073871", "cabinet": "Trillium Audit Conseil Expertise", "adresse": "Centre d'Affaires Madani Plaza N54, Bur N62, Av Abdelkarim El Khattabi, Guéliz", "email": "jouigi.mohamed.ayoub@gmail.com", "tel": "", "web": "", "linkedin": "MOHAMED AYOUB JOUIGI", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 2, "nom": "Zineb Kasbane", "id": "2025073886", "cabinet": "Digit Compta", "adresse": "92, Boulevard Zerktouni, Etage 1, Bur 4, Guéliz", "email": "digitcompta@gmail.com", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 3, "nom": "Driss Labbardi", "id": "2025073881", "cabinet": "Fiscalex Maroc", "adresse": "Res Masjid 1, Etg 5, Appt 29, Guéliz", "email": "d.labbardi@fiscalex-maroc.ma", "tel": "+212 524 458 052", "web": "https://www.fiscalex-maroc.ma", "linkedin": "", "couleur": "linear-gradient(145deg,#3a5a2a,#1a3010)"}, {"idx": 4, "nom": "Ahmed Meggouri", "id": "2025073884", "cabinet": "AMP Consulting", "adresse": "Av. Moulay Abdellah, Résidence Taiba A, 4ème Etage, Bureau 12", "email": "a.meggouri@am-consulting.ma", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#5a3a1a,#2a1a08)"}, {"idx": 5, "nom": "El Houssain Sellami", "id": "2025073869", "cabinet": "Accura Advisory Morocco", "adresse": "Av Abdelkrim Al Khatib, 52 Lot Tassila, Etage 1, Bur 8", "email": "sellami.elhoussain@accura-advisory.com", "tel": "0601521152", "web": "accura-advisory.com", "linkedin": "EL HOUSSAIN SELLAMI", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)"}, {"idx": 6, "nom": "Nabil Aourarh", "id": "2024073791", "cabinet": "Cabinet Mimaq", "adresse": "23, Rue Tarik Ben Ziad, Résidence Akansouss, AP 4, Etg 1, Guéliz", "email": "direction@mimaq.ma", "tel": "0524432443", "web": "https://mimaq.ma/", "linkedin": "NABIL AOURARH", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 7, "nom": "Mohamed Amine Bouyousfi", "id": "2024073803", "cabinet": "iCounts", "adresse": "Coralia, Résidence Les Orangers, Imm 14, App 5, Av Mohammed VI", "email": "bouyousfiamine@yahoo.fr", "tel": "", "web": "", "linkedin": "MOHAMED AMINE BOUYOUSFI", "couleur": "linear-gradient(145deg,#2a5c3a,#0d2a1a)"}, {"idx": 8, "nom": "Kamal Matiri", "id": "2024073828", "cabinet": "3A Experts & Partners", "adresse": "Imm Dani, Plateau 12, Etage 2, Angle Rue Tarik Ibn Ziad et la Liberté, Guéliz", "email": "k.matiri@3aep.fr", "tel": "", "web": "https://3aep.fr/", "linkedin": "KAMAL MATIRI", "couleur": "linear-gradient(145deg,#5a4a2a,#2a2010)"}, {"idx": 9, "nom": "Faical Boutakioute", "id": "2023073748", "cabinet": "Fidurak", "adresse": "Appt 4, 1er Etage, N°106, Rue Yougoslavie, Guéliz", "email": "cabinet.fidurak@gmail.com", "tel": "0524434300", "web": "https://fidurak.com/", "linkedin": "FAICAL BOUTAKIOUTE", "couleur": "linear-gradient(145deg,#2a3a5c,#0d1a2a)"}, {"idx": 10, "nom": "Youssef Debbagh Zriouil", "id": "2023073751", "cabinet": "Cabinet Debbagh", "adresse": "App14, 3ème Etg, Zenith Business Center, Rue Mouslim, Lot Boukar", "email": "ysf.debbagh@gmail.com", "tel": "0660826400", "web": "", "linkedin": "YOUSSEF DEBBAGH ZRIOUIL", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)"}, {"idx": 11, "nom": "El Hassane Latif", "id": "2023073772", "cabinet": "Audit Etoile Expertise Comptable", "adresse": "App11, 2ème Etg, Zenith Business Center, Rue Mouslim, Lot Boukar", "email": "elhassanelatif@gmail.com", "tel": "0525615308", "web": "www.aexpertise.ma", "linkedin": "EL HASSANE LATIF", "couleur": "linear-gradient(145deg,#3a5a2a,#1a2a10)"}, {"idx": 12, "nom": "Amine Regragui", "id": "2022073722", "cabinet": "RM Expertise", "adresse": "Lot Akioud Zouhour Semlalia, Imm A, 3ème Etg, Bur 12, Guéliz", "email": "amine.regragui@rmpartners.fr", "tel": "0626770645", "web": "rmpartners.fr", "linkedin": "AMINE REGRAGUI", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)", "badge": "Trésorier OEC"}, {"idx": 13, "nom": "Samia Zouanate", "id": "2022073732", "cabinet": "Cabinet Zouanate Samia", "adresse": "Résidence Clarisse, Bureau 10, Rue Mohamed El Baqual, Guéliz", "email": "zouanatesamia@gmail.com", "tel": "0524434123", "web": "https://czs.ma/", "linkedin": "SAMIA ZOUANATE", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)", "badge": "Secrétaire Générale OEC"}, {"idx": 14, "nom": "Abla Zakoun", "id": "2021073687", "cabinet": "Cabinet Zakoun & Associés", "adresse": "Imm 60, Appt 4, Bd Abdelkrim Al Khattabi", "email": "ablazakoun@gmail.com", "tel": "0524432925", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#5a2a6b,#2a1038)"}, {"idx": 15, "nom": "Mouhcine Merbouh", "id": "2019073601", "cabinet": "Ficasud Expertise", "adresse": "Angle Av Mohamed V et Rue Ibn Habbous, 1er étage, Apt 1, Guéliz", "email": "mouhcine.merbouh@ficasud.ma", "tel": "0661186683", "web": "", "linkedin": "MOUHCINE MERBOUH", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)", "badge": "Président OEC"}, {"idx": 16, "nom": "Taib Berrada El Azizi", "id": "2018073558", "cabinet": "", "adresse": "Apt 20, Résidence Amitaf, 3 Rue Loubnane", "email": "elazizitaib@gmail.com", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#3a3a2a,#1a1a10)"}, {"idx": 17, "nom": "Youssef El Moulihi", "id": "2018073565", "cabinet": "SMC Consulting", "adresse": "Bd Allal El Fassi, Imm Atlassi A1, 1er étage, bureau 3", "email": "y.elmoulihi@smc-consulting.ma", "tel": "0524423866", "web": "http://www.smc-consulting.ma", "linkedin": "YOUSSEF EL MOULIHI", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 18, "nom": "Zakaria Mobhid", "id": "2017073542", "cabinet": "Cabinet Mobhid", "adresse": "Immeuble Espace Nakhil, Avenue Yacoub El Mansour", "email": "zakaria@cabinet-mobhid.com", "tel": "0666622070", "web": "", "linkedin": "ZAKARIA MOBHID", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)", "badge": "Vice-Président OEC"}, {"idx": 19, "nom": "Souad Choukairi", "id": "2016073482", "cabinet": "Cabinet Choukairi Ayad", "adresse": "N°4 Bâtiment 162, 2ème étage, Quartier Industriel Sidi Ghanem", "email": "scayad@yahoo.fr", "tel": "0524055545", "web": "", "linkedin": "SOUAD CHOUKAIRI", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 20, "nom": "Nadia Laayssel", "id": "2016073499", "cabinet": "Laman Expertise", "adresse": "Riad Arfoud N8, Avenue Mouzdalifa", "email": "nadialaayssel@outlook.fr", "tel": "0524434946", "web": "http://www.laman-expert.ma", "linkedin": "NADIA LAAYSSEL", "couleur": "linear-gradient(145deg,#5a2a6b,#2a1038)"}, {"idx": 21, "nom": "Adil Esskali", "id": "2014063409", "cabinet": "Fair Partners", "adresse": "BD Mohamed V, Imm Arc en ciel, Bureau N3-1, Etage 1", "email": "adil.esskali@fairpartner.fr", "tel": "0623321419", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#2a5c3a,#0d2a1a)"}, {"idx": 22, "nom": "Sanaa Lkasmi", "id": "2014073417", "cabinet": "Vivalec", "adresse": "3, Rue loubnane, Résidence Amitaf, Appt 20", "email": "sanaa.lk@hotmail.com", "tel": "", "web": "", "linkedin": "SANAA LKASMI", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 23, "nom": "Zahra Hajrioui", "id": "2013073372", "cabinet": "HLZ Consulting", "adresse": "Immeuble Riad Nawal G, Etage 1, A8, Avenue El Mouzdalifa, Guéliz", "email": "hlzconsulting@gmail.com", "tel": "0524420229", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#5a2a5a,#2a1028)"}, {"idx": 24, "nom": "Brahim Bahmad", "id": "2012073332", "cabinet": "Cabinet Bahmad", "adresse": "Résidence Marrakech Plaza, Immeuble D1, 2ème Étage, Guéliz", "email": "direction@cabinet-bahmad.ma", "tel": "0524435995", "web": "https://www.cabinet-bahmad.ma", "linkedin": "BRAHIM BAHMAD", "couleur": "linear-gradient(145deg,#2a2a2a,#0d0d0d)"}, {"idx": 25, "nom": "Imane Benzakour", "id": "2012073333", "cabinet": "Atrium Audit et Conseil", "adresse": "57, Rue Mauritania, BP 2609, Principale Guéliz", "email": "ibenzakour@atrium.ma", "tel": "0524448585", "web": "www.atrium.ma", "linkedin": "IMANE BENZAKOUR", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 26, "nom": "Zineb El Moumen", "id": "2012073337", "cabinet": "Elmoumen Conseils Marrakech", "adresse": "Boulevard Yacoub El Mansour, Imm. Amira III, N° 24, 2ème étage", "email": "elmoumenconseil@gmail.com", "tel": "0524303013", "web": "https://elmoumenconseil.ma", "linkedin": "ZINEB EL MOUMEN", "couleur": "linear-gradient(145deg,#5a2a5a,#2a1028)"}, {"idx": 27, "nom": "Hicham Ait Belhoucine", "id": "2010073284", "cabinet": "", "adresse": "Boulevard Zerktouni, Imm 43, 2ème étage, Bureau 6, Guéliz", "email": "hbelhoucine@gmail.com", "tel": "0524290742", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 28, "nom": "Meriem Rmili", "id": "2008073266", "cabinet": "Cabinet Rmili & Associés", "adresse": "80, Rue Yougoslavie, Rés. La Paix, 1er étage, Guéliz", "email": "cabinetrmili@gmail.com", "tel": "0524447702", "web": "www.cabinetrmili.com", "linkedin": "MERIEM RMILI", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 29, "nom": "Asmaa Resmouki", "id": "2002073187", "cabinet": "Resmouki Consulting", "adresse": "SYBA, Municipalité Nakhil-Doaur Jnane Tallaght, Villa 44", "email": "aresmouki@hotmail.fr", "tel": "", "web": "", "linkedin": "ASMAA RESMOUKI", "couleur": "linear-gradient(145deg,#5a2a5a,#2a1028)"}, {"idx": 30, "nom": "Zouhair Thalal", "id": "2002073189", "cabinet": "Thalal Consultants", "adresse": "23, Rue Tarik Bnou Ziad", "email": "zouhairthalal@gmail.com", "tel": "0524432898", "web": "", "linkedin": "ZOUHAIR THALAL", "couleur": "linear-gradient(145deg,#3a3a2a,#1a1a10)"}, {"idx": 31, "nom": "Mohamed Faouzi Dinari", "id": "1999073153", "cabinet": "Proximo", "adresse": "7, Rue de la liberté, Guéliz", "email": "fouzi.dinari@proximo.ma", "tel": "0524448829", "web": "https://proximo-expertise.ma", "linkedin": "MOHAMED FAOUZI DINARI", "couleur": "linear-gradient(145deg,#2a3a5c,#0d1a2a)"}, {"idx": 32, "nom": "Abdelwahed Bensinane", "id": "1994073037", "cabinet": "Ficadex Bensinane", "adresse": "255, Angle Avenue Med V et Rue Ibn Habous, Imm. SMDC, Guéliz", "email": "w.bensinane@ficadex-maroc.ma", "tel": "0524437868", "web": "", "linkedin": "ABDELWAHED BENSINANE", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)"}, {"idx": 33, "nom": "Abdelali Berrada", "id": "1994073040", "cabinet": "", "adresse": "36, Rue Allal Ben Ahmed", "email": "b.sofigex@gmail.com", "tel": "0524447052", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#2a2a3a,#0d0d1a)"}, {"idx": 34, "nom": "M'Barek Zakoun", "id": "1994073127", "cabinet": "", "adresse": "Imm. Tazi n° 60, Appt n° 4, Bd Abdelkrim El Khattabi", "email": "fidunak@menara.ma", "tel": "0524432925", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#3a2a1a,#1a1008)"}];
+var EXPERTS=[{"idx": 0, "nom": "Nouamane El Jazouli", "id": "2026073912", "cabinet": "El Jazouli Expertise-Comptable", "adresse": "4 Rue El Imam Abou Hanifa, Résidence Warda C, Guéliz", "email": "eljazouli.nouamane@gmail.com", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#2a5c8a,#0d2a4a)"}, {"idx": 1, "nom": "Mohamed Ayoub Jouigi", "id": "2025073871", "cabinet": "Trillium Audit Conseil Expertise", "adresse": "Centre d'Affaires Madani Plaza N54, Bur N62, Av Abdelkarim El Khattabi, Guéliz", "email": "jouigi.mohamed.ayoub@gmail.com", "tel": "", "web": "", "linkedin": "MOHAMED AYOUB JOUIGI", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 2, "nom": "Zineb Kasbane", "id": "2025073886", "cabinet": "Digit Compta", "adresse": "92, Boulevard Zerktouni, Etage 1, Bur 4, Guéliz", "email": "digitcompta@gmail.com", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 3, "nom": "Driss Labbardi", "id": "2025073881", "cabinet": "Fiscalex Maroc", "adresse": "Res Masjid 1, Etg 5, Appt 29, Guéliz", "email": "d.labbardi@fiscalex-maroc.ma", "tel": "+212 524 458 052", "web": "https://www.fiscalex-maroc.ma", "linkedin": "", "couleur": "linear-gradient(145deg,#3a5a2a,#1a3010)"}, {"idx": 4, "nom": "Ahmed Meggouri", "id": "2025073884", "cabinet": "AMP Consulting", "adresse": "Av. Moulay Abdellah, Résidence Taiba A, 4ème Etage, Bureau 12", "email": "a.meggouri@am-consulting.ma", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#5a3a1a,#2a1a08)"}, {"idx": 5, "nom": "El Houssain Sellami", "id": "2025073869", "cabinet": "Accura Advisory Morocco", "adresse": "Av Abdelkrim Al Khatib, 52 Lot Tassila, Etage 1, Bur 8", "email": "sellami.elhoussain@accura-advisory.com", "tel": "0601521152", "web": "accura-advisory.com", "linkedin": "EL HOUSSAIN SELLAMI", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)"}, {"idx": 6, "nom": "Nabil Aourarh", "id": "2024073791", "cabinet": "Cabinet Mimaq", "adresse": "23, Rue Tarik Ben Ziad, Résidence Akansouss, AP 4, Etg 1, Guéliz", "email": "direction@mimaq.ma", "tel": "0524432443", "web": "https://mimaq.ma/", "linkedin": "NABIL AOURARH", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 7, "nom": "Mohamed Amine Bouyousfi", "id": "2024073803", "cabinet": "iCounts", "adresse": "Coralia, Résidence Les Orangers, Imm 14, App 5, Av Mohammed VI", "email": "bouyousfiamine@yahoo.fr", "tel": "", "web": "", "linkedin": "MOHAMED AMINE BOUYOUSFI", "couleur": "linear-gradient(145deg,#2a5c3a,#0d2a1a)"}, {"idx": 8, "nom": "Kamal Matiri", "id": "2024073828", "cabinet": "3A Experts & Partners", "adresse": "Imm Dani, Plateau 12, Etage 2, Angle Rue Tarik Ibn Ziad et la Liberté, Guéliz", "email": "k.matiri@3aep.fr", "tel": "", "web": "https://3aep.fr/", "linkedin": "KAMAL MATIRI", "couleur": "linear-gradient(145deg,#5a4a2a,#2a2010)"}, {"idx": 9, "nom": "Faical Boutakioute", "id": "2023073748", "cabinet": "Fidurak", "adresse": "Appt 4, 1er Etage, N°106, Rue Yougoslavie, Guéliz", "email": "cabinet.fidurak@gmail.com", "tel": "0524434300", "web": "https://fidurak.com/", "linkedin": "FAICAL BOUTAKIOUTE", "couleur": "linear-gradient(145deg,#2a3a5c,#0d1a2a)"}, {"idx": 10, "nom": "Youssef Debbagh Zriouil", "id": "2023073751", "cabinet": "Cabinet Debbagh", "adresse": "App14, 3ème Etg, Zenith Business Center, Rue Mouslim, Lot Boukar", "email": "ysf.debbagh@gmail.com", "tel": "0660826400", "web": "", "linkedin": "YOUSSEF DEBBAGH ZRIOUIL", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)"}, {"idx": 11, "nom": "El Hassane Latif", "id": "2023073772", "cabinet": "Audit Etoile Expertise Comptable", "adresse": "App11, 2ème Etg, Zenith Business Center, Rue Mouslim, Lot Boukar", "email": "elhassanelatif@gmail.com", "tel": "0525615308", "web": "www.aexpertise.ma", "linkedin": "EL HASSANE LATIF", "couleur": "linear-gradient(145deg,#3a5a2a,#1a2a10)"}, {"idx": 12, "nom": "Amine Regragui", "id": "2022073722", "cabinet": "RM Expertise", "adresse": "Lot Akioud Zouhour Semlalia, Imm A, 3ème Etg, Bur 12, Guéliz", "email": "amine.regragui@rmpartners.fr", "tel": "0626770645", "web": "rmpartners.fr", "linkedin": "AMINE REGRAGUI", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)", "badge": "Trésorier OEC"}, {"idx": 13, "nom": "Samia Zouanate", "id": "2022073732", "cabinet": "Cabinet Zouanate Samia", "adresse": "Résidence Clarisse, Bureau 10, Rue Mohamed El Baqual, Guéliz", "email": "zouanatesamia@gmail.com", "tel": "0524434123", "web": "https://czs.ma/", "linkedin": "SAMIA ZOUANATE", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)", "badge": "Secrétaire Générale OEC"}, {"idx": 14, "nom": "Abla Zakoun", "id": "2021073687", "cabinet": "Cabinet Zakoun & Associés", "adresse": "Imm 60, Appt 4, Bd Abdelkrim Al Khattabi", "email": "ablazakoun@gmail.com", "tel": "0524432925", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#5a2a6b,#2a1038)"}, {"idx": 15, "nom": "Mouhcine Merbouh", "id": "2019073601", "cabinet": "Ficasud Expertise", "adresse": "Angle Av Mohamed V et Rue Ibn Habbous, 1er étage, Apt 1, Guéliz", "email": "mouhcine.merbouh@ficasud.ma", "tel": "0661186683", "web": "", "linkedin": "MOUHCINE MERBOUH", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)", "badge": "Président OEC"}, {"idx": 16, "nom": "Taib Berrada El Azizi", "id": "2018073558", "cabinet": "", "adresse": "Apt 20, Résidence Amitaf, 3 Rue Loubnane", "email": "elazizitaib@gmail.com", "tel": "", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#3a3a2a,#1a1a10)"}, {"idx": 17, "nom": "Youssef El Moulihi", "id": "2018073565", "cabinet": "SMC Consulting", "adresse": "Bd Allal El Fassi, Imm Atlassi A1, 1er étage, bureau 3", "email": "y.elmoulihi@smc-consulting.ma", "tel": "0524423866", "web": "http://www.smc-consulting.ma", "linkedin": "YOUSSEF EL MOULIHI", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 18, "nom": "Zakaria Mobhid", "id": "2017073542", "cabinet": "Cabinet Mobhid", "adresse": "Immeuble Espace Nakhil, Avenue Yacoub El Mansour", "email": "zakaria@cabinet-mobhid.com", "tel": "0666622070", "web": "", "linkedin": "ZAKARIA MOBHID", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)", "badge": "Vice-Président OEC"}, {"idx": 19, "nom": "Souad Choukairi", "id": "2016073482", "cabinet": "Cabinet Choukairi Ayad", "adresse": "N°4 Bâtiment 162, 2ème étage, Quartier Industriel Sidi Ghanem", "email": "scayad@yahoo.fr", "tel": "0524055545", "web": "", "linkedin": "SOUAD CHOUKAIRI", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 20, "nom": "Nadia Laayssel", "id": "2016073499", "cabinet": "Laman Expertise", "adresse": "Riad Arfoud N8, Avenue Mouzdalifa", "email": "nadialaayssel@outlook.fr", "tel": "0524434946", "web": "http://www.laman-expert.ma", "linkedin": "NADIA LAAYSSEL", "couleur": "linear-gradient(145deg,#5a2a6b,#2a1038)"}, {"idx": 21, "nom": "Adil Esskali", "id": "2014063409", "cabinet": "Fair Partners", "adresse": "BD Mohamed V, Imm Arc en ciel, Bureau N3-1, Etage 1", "email": "adil.esskali@fairpartner.fr", "tel": "0623321419", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#2a5c3a,#0d2a1a)"}, {"idx": 22, "nom": "Sanaa Lkasmi", "id": "2014073417", "cabinet": "Vivalec", "adresse": "3, Rue loubnane, Résidence Amitaf, Appt 20", "email": "sanaa.lk@hotmail.com", "tel": "", "web": "", "linkedin": "SANAA LKASMI", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 23, "nom": "Zahra Hajrioui", "id": "2013073372", "cabinet": "HLZ Consulting", "adresse": "Immeuble Riad Nawal G, Etage 1, A8, Avenue El Mouzdalifa, Guéliz", "email": "hlzconsulting@gmail.com", "tel": "0524420229", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#5a2a5a,#2a1028)"}, {"idx": 24, "nom": "Brahim Bahmad", "id": "2012073332", "cabinet": "Cabinet Bahmad", "adresse": "Bureaux 31 et 32, Centre d'affaires Les Négociants, Immeuble angle Avenue Mohamed V et Rue Yougoslavie, Guéliz", "email": "direction@cabinet-bahmad.ma", "tel": "0524435995", "web": "https://www.cabinet-bahmad.ma", "linkedin": "BRAHIM BAHMAD", "couleur": "linear-gradient(145deg,#2a2a2a,#0d0d0d)"}, {"idx": 25, "nom": "Imane Benzakour", "id": "2012073333", "cabinet": "Atrium Audit et Conseil", "adresse": "57, Rue Mauritania, BP 2609, Principale Guéliz", "email": "ibenzakour@atrium.ma", "tel": "0524448585", "web": "www.atrium.ma", "linkedin": "IMANE BENZAKOUR", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 26, "nom": "Zineb El Moumen", "id": "2012073337", "cabinet": "Elmoumen Conseils Marrakech", "adresse": "Boulevard Yacoub El Mansour, Imm. Amira III, N° 24, 2ème étage", "email": "elmoumenconseil@gmail.com", "tel": "0524303013", "web": "https://elmoumenconseil.ma", "linkedin": "ZINEB EL MOUMEN", "couleur": "linear-gradient(145deg,#5a2a5a,#2a1028)"}, {"idx": 27, "nom": "Hicham Ait Belhoucine", "id": "2010073284", "cabinet": "", "adresse": "Boulevard Zerktouni, Imm 43, 2ème étage, Bureau 6, Guéliz", "email": "hbelhoucine@gmail.com", "tel": "0524290742", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#1e4870,#0d2540)"}, {"idx": 28, "nom": "Meriem Rmili", "id": "2008073266", "cabinet": "Cabinet Rmili & Associés", "adresse": "80, Rue Yougoslavie, Rés. La Paix, 1er étage, Guéliz", "email": "cabinetrmili@gmail.com", "tel": "0524447702", "web": "www.cabinetrmili.com", "linkedin": "MERIEM RMILI", "couleur": "linear-gradient(145deg,#6b2a6b,#3a1438)"}, {"idx": 29, "nom": "Asmaa Resmouki", "id": "2002073187", "cabinet": "Resmouki Consulting", "adresse": "SYBA, Municipalité Nakhil-Doaur Jnane Tallaght, Villa 44", "email": "aresmouki@hotmail.fr", "tel": "", "web": "", "linkedin": "ASMAA RESMOUKI", "couleur": "linear-gradient(145deg,#5a2a5a,#2a1028)"}, {"idx": 30, "nom": "Zouhair Thalal", "id": "2002073189", "cabinet": "Thalal Consultants", "adresse": "23, Rue Tarik Bnou Ziad", "email": "zouhairthalal@gmail.com", "tel": "0524432898", "web": "", "linkedin": "ZOUHAIR THALAL", "couleur": "linear-gradient(145deg,#3a3a2a,#1a1a10)"}, {"idx": 31, "nom": "Mohamed Faouzi Dinari", "id": "1999073153", "cabinet": "Proximo", "adresse": "7, Rue de la liberté, Guéliz", "email": "fouzi.dinari@proximo.ma", "tel": "0524448829", "web": "https://proximo-expertise.ma", "linkedin": "MOHAMED FAOUZI DINARI", "couleur": "linear-gradient(145deg,#2a3a5c,#0d1a2a)"}, {"idx": 32, "nom": "Abdelwahed Bensinane", "id": "1994073037", "cabinet": "Ficadex Bensinane", "adresse": "255, Angle Avenue Med V et Rue Ibn Habous, Imm. SMDC, Guéliz", "email": "w.bensinane@ficadex-maroc.ma", "tel": "0524437868", "web": "", "linkedin": "ABDELWAHED BENSINANE", "couleur": "linear-gradient(145deg,#9D2E3A,#6a1e27)"}, {"idx": 33, "nom": "Abdelali Berrada", "id": "1994073040", "cabinet": "", "adresse": "36, Rue Allal Ben Ahmed", "email": "b.sofigex@gmail.com", "tel": "0524447052", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#2a2a3a,#0d0d1a)"}, {"idx": 34, "nom": "M'Barek Zakoun", "id": "1994073127", "cabinet": "", "adresse": "Imm. Tazi n° 60, Appt n° 4, Bd Abdelkrim El Khattabi", "email": "fidunak@menara.ma", "tel": "0524432925", "web": "", "linkedin": "", "couleur": "linear-gradient(145deg,#3a2a1a,#1a1008)"}];
 var PAGE_SIZE=12,curPage=1,curAlpha='',curSearch='',filtered=[];
-function sortDirectoryCards(){
-  var grid=document.getElementById('annGrid');
-  if(!grid) return;
-
-  // Requested priority order:
-  // 1. Mouhcine Merbouh
-  // 2. Zakaria Mobhid
-  // 3. Samia Zouanate
-  // 4. Amine Regragui
-  // Then all other members in their existing order.
-  var priority=[
-    '2019073601', // Mouhcine Merbouh
-    '2017073542', // Zakaria Mobhid
-    '2022073732', // Samia Zouanate
-    '2022073722'  // Amine Regragui
-  ];
-
-  var rank={};
-  priority.forEach(function(id,i){rank[id]=i;});
-
-  var cards=Array.from(grid.querySelectorAll('.ann-card'));
-  cards.sort(function(a,b){
-    var ra=rank[a.dataset.id]!==undefined ? rank[a.dataset.id] : 9999;
-    var rb=rank[b.dataset.id]!==undefined ? rank[b.dataset.id] : 9999;
-    if(ra!==rb) return ra-rb;
-    return parseInt(a.dataset.idx)-parseInt(b.dataset.idx);
-  });
-
-  cards.forEach(function(card){grid.appendChild(card);});
-}
-
 function init(){
-  sortDirectoryCards();
+  buildAlpha();
   applyFilters();
   // Lien direct : ouvre automatiquement la fiche d'un membre si l'URL contient ?id=XXXXXXXXXX
   var params=new URLSearchParams(window.location.search);
@@ -1361,23 +1313,6 @@ function applyFilters(){
     var ok2=!curSearch||s.includes(curSearch);
     if(ok1&&ok2)filtered.push(i);
   });
-  // Priorité globale AVANT la pagination :
-  // ces 4 membres doivent donc être dans la page 1,
-  // et pas seulement être déplacés visuellement dans la grille.
-  var priority={
-    '2019073601':0, // Mouhcine Merbouh
-    '2017073542':1, // Zakaria Mobhid
-    '2022073732':2, // Samia Zouanate
-    '2022073722':3  // Amine Regragui
-  };
-  filtered.sort(function(a,b){
-    var ea=EXPERTS[a], eb=EXPERTS[b];
-    var ra=priority[ea.id] !== undefined ? priority[ea.id] : 9999;
-    var rb=priority[eb.id] !== undefined ? priority[eb.id] : 9999;
-    if(ra!==rb) return ra-rb;
-    return a-b;
-  });
-
   renderCards();renderPagination();updateCount();
 }
 function renderCards(){
@@ -1414,47 +1349,36 @@ function openModal(idx){
   var card=document.querySelector('.ann-card[data-idx="'+idx+'"]');
   var photoEl=card?card.querySelector('.ann-photo'):null;
   var photoSrc=photoEl?photoEl.src:null;
-
-  /* ── Icônes SVG (style cohérent avec le reste du site) ── */
-  var ICO={
-    badge:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M9.5 13.5 8 22l4-2 4 2-1.5-8.5"/></svg>',
-    building:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 21v-4h6v4M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1"/></svg>',
-    pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>',
-    phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.11 4.18 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>',
-    mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>',
-    globe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"/></svg>',
-    linkedin:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.44-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.11 20.45H3.55V9h3.56v11.45Z"/></svg>',
-    idcard:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="8" cy="12" r="2"/><path d="M13 10h6M13 14h4M5 17h6"/></svg>'
-  };
-
-  /* ── Header : photo à droite, infos à gauche (dynamique par membre) ── */
-  var photoBlock=(photoSrc&&photoSrc.startsWith('data:'))
-    ? '<img src="'+photoSrc+'" class="modal-photo" alt="'+e.nom+'">'
-    : '<div class="modal-photo-fallback" style="background:'+e.couleur+'">'+initials+'</div>';
-  var badgeBlock='<span class="modal-badge">'+ICO.badge+' '+(e.badge||'Expert-Comptable')+'</span>';
-  var hdr=
-    '<div class="modal-header-info">'+
-      '<span class="modal-id-tag">ID '+e.id+'</span>'+
-      '<div class="modal-name">'+e.nom+'</div>'+
-      '<div class="modal-cabinet-txt">'+(e.cabinet||'Expert-Comptable Indépendant')+'</div>'+
-      badgeBlock+
-    '</div>'+
-    '<div class="modal-header-photo-wrap">'+photoBlock+'</div>'+
-    '<button class="modal-close" onclick="closeModal()">✕</button>';
+  var photoInner='';
+  if(photoSrc&&photoSrc.startsWith('data:')){photoInner='<img src="'+photoSrc+'" class="modal-photo" alt="'+e.nom+'">';}
+  else{photoInner='<div class="modal-photo-fallback" style="background:'+e.couleur+'">'+initials+'</div>';}
+  var hdr='<div class="modal-header-inner">';
+  hdr+='<div class="modal-header-text"><div class="modal-id-tag">ID '+e.id+'</div><div class="modal-name">'+e.nom.toUpperCase()+'</div><div class="modal-cabinet-txt">'+(e.cabinet||'Expert-Comptable Indépendant')+'</div>';
+  if(e.badge)hdr+='<span class="modal-badge-role">🏅 '+e.badge+'</span>';
+  hdr+='</div>';
+  hdr+='<div class="modal-header-photo">'+photoInner+'</div>';
+  hdr+='</div>';
+  hdr+='<button class="modal-close" onclick="closeModal()">✕</button>';
   document.getElementById('modalHeader').innerHTML=hdr;
-
-  /* ── Coordonnées professionnelles : lignes icône | libellé | séparateur | valeur ── */
-  function row(ico,lbl,val){return '<div class="modal-row"><div class="modal-row-ico">'+ico+'</div><div class="modal-row-content"><span class="modal-row-label">'+lbl+'</span><span class="modal-row-divider"></span><span class="modal-row-val">'+val+'</span></div></div>';}
-  var rows='';
-  if(e.cabinet)rows+=row(ICO.building,'Cabinet',e.cabinet);
-  if(e.adresse)rows+=row(ICO.pin,'Adresse',e.adresse+', Marrakech');
-  if(e.tel)rows+=row(ICO.phone,'Téléphone','<a href="tel:'+e.tel+'">'+e.tel+'</a>');
-  if(e.email)rows+=row(ICO.mail,'Email','<a href="mailto:'+e.email+'">'+e.email+'</a>');
-  if(e.web)rows+=row(ICO.globe,'Site web','<a href="'+(e.web.startsWith('http')?e.web:'https://'+e.web)+'" target="_blank">'+e.web+'</a>');
-  if(e.linkedin)rows+=row(ICO.linkedin,'LinkedIn','<a href="https://www.linkedin.com/in/'+encodeURIComponent(e.linkedin)+'" target="_blank">'+e.linkedin+'</a>');
-  document.getElementById('modalBody').innerHTML='<h3 class="modal-sec-title">Coordonnées professionnelles</h3>'+rows;
+  function card(ico,lbl,val){return '<div class="modal-info-card"><div class="modal-info-ico">'+ico+'</div><div><div class="modal-info-label">'+lbl+'</div><div class="modal-info-val">'+val+'</div></div></div>';}
+  var cards='';
+  if(e.cabinet)cards+=card('🏢','Cabinet',e.cabinet);
+  if(e.adresse)cards+=card('📍','Adresse',e.adresse+', Marrakech');
+  if(e.tel)cards+=card('📞','Téléphone','<a href="tel:'+e.tel+'">'+e.tel+'</a>');
+  if(e.email)cards+=card('✉️','Email','<a href="mailto:'+e.email+'">'+e.email+'</a>');
+  if(e.web)cards+=card('🌐','Site web','<a href="'+(e.web.startsWith('http')?e.web:'https://'+e.web)+'" target="_blank">'+e.web+'</a>');
+  if(e.linkedin)cards+=card('💼','LinkedIn','<a href="https://www.linkedin.com/in/'+encodeURIComponent(e.linkedin)+'" target="_blank">'+e.linkedin+'</a>');
+  cards+=card('🪪','Inscription OEC','ID '+e.id+' · Membre actif · Marrakech');
+  var actions='';
+  if(e.email)actions+='<a href="mailto:'+e.email+'" class="mbtn-p">✉️ Envoyer un email</a>';
+  if(e.tel)actions+='<a href="tel:'+e.tel+'" class="mbtn-s">📞 Appeler</a>';
+  if(e.adresse)actions+='<a href="https://maps.google.com/?q='+encodeURIComponent(e.adresse+', Marrakech, Maroc')+'" target="_blank" class="mbtn-s">🗺️ Google Maps</a>';
+  actions+='<a href="https://oec.ma/annuaire/list?searchTerm='+encodeURIComponent(e.nom)+'&type=person&city=Marrakech" target="_blank" class="mbtn-s">🏛️ Fiche OEC</a>';
+  document.getElementById('modalBody').innerHTML='<div class="modal-cards-grid">'+cards+'</div><div class="modal-actions">'+actions+'</div>';
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow='hidden';
+  var cardEls=document.querySelectorAll('.modal-info-card');
+  cardEls.forEach(function(c,i){setTimeout(function(){c.classList.add('show');},80+i*70);});
 }
 function closeModal(){document.getElementById('modalOverlay').classList.remove('open');document.body.style.overflow='';}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
